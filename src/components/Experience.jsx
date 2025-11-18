@@ -123,8 +123,8 @@ export default function Experience() {
               <Image
                 src="/experiences/stellantis.png"
                 alt="Stellantis"
-                width={150}
-                height={150}
+                width={100}
+                height={100}
                 className="object-contain rounded-xl shadow-md bg-white p-2"
               />
               <div>
@@ -179,8 +179,8 @@ export default function Experience() {
               <Image
                 src="/experiences/cadiayyad.png"
                 alt="Université Cadi Ayyad"
-                width={150}
-                height={150}
+                width={100}
+                height={100}
                 className="object-contain rounded-xl shadow-md bg-white p-2"
               />
               <div>
