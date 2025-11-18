@@ -129,7 +129,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 
 export default function Hero() {
-  const words = ["ELABJANI Yassmine", "Engineering Student", "Passionate About Full-stack developpement and AI "];
+  const words = ["ELABJANI Yassmine", "Engineering Student", "Passionate About Full-stack developement and AI "];
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
   const [forward, setForward] = useState(true);
