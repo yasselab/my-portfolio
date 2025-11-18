@@ -144,7 +144,7 @@ export default function Skills() {
     flex flex-col items-center justify-center
     px-4 py-3
     rounded-2xl 
-    bg-[#E8BF8F]/80 dark:bg-[#151011]/80
+    bg-[#F1D7B6]/80 dark:bg-[#151011]/80
     border border-[#D9A86C]/40
     text-sm 
     text-brand-text dark:text-darkbrand-text
