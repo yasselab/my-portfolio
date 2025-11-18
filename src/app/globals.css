@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+/* Animations fade-up */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+.fade-up-delay {
+  animation: fadeUp 0.8s ease-out 0.25s forwards;
+}
+
+.fade-up-delay-2 {
+  animation: fadeUp 0.8s ease-out 0.45s forwards;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 15px rgba(217, 168, 108, 0.4),
+                0 0 30px rgba(217, 168, 108, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(217, 168, 108, 0.7),
+                0 0 45px rgba(217, 168, 108, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 15px rgba(217, 168, 108, 0.4),
+                0 0 30px rgba(217, 168, 108, 0.2);
+  }
+}
+
+@keyframes glowGold {
+  0% {
+    box-shadow:
+      0 0 12px rgba(217, 168, 108, 0.35),
+      0 0 26px rgba(200, 145, 85, 0.25);
+  }
+  50% {
+    box-shadow:
+      0 0 20px rgba(217, 168, 108, 0.7),
+      0 0 40px rgba(200, 145, 85, 0.45);
+  }
+  100% {
+    box-shadow:
+      0 0 12px rgba(217, 168, 108, 0.35),
+      0 0 26px rgba(200, 145, 85, 0.25);
+  }
+}
+
+.glow-gold {
+  animation: glowGold 2.2s ease-in-out infinite;
+}
+
+@keyframes goldFloat {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
+
+.floating-gold {
+  animation: goldFloat 4s ease-in-out infinite;
+}
+
+@keyframes skillsMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* le train qui défile */
+.skill-track {
+  animation: skillsMarquee 22s linear infinite;
+}
+
+/* quand on survole une ligne de skills, on met en pause */
+.skill-row:hover .skill-track {
+  animation-play-state: paused;
+}
+
