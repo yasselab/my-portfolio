@@ -1,121 +1,3 @@
-// "use client";
-
-// import Image from "next/image";
-// import { useState, useEffect } from "react";
-// import { useTranslations } from "next-intl";
-
-// export default function Hero() {
-//   const t = useTranslations("hero");
-
-//   const words = [
-//     "ELABJANI Yassmine",
-//     "Engineering Student",
-//     "Passionate About Full-stack developpement and AI "
-//   ];
-
-//   const [index, setIndex] = useState(0);
-//   const [subIndex, setSubIndex] = useState(0);
-//   const [forward, setForward] = useState(true);
-
-//   // ---- Machine à écrire (NE PAS TOUCHER) ----
-//   useEffect(() => {
-//     if (index === words.length) return;
-
-//     const timeout = setTimeout(() => {
-//       setSubIndex((prev) => (forward ? prev + 1 : prev - 1));
-
-//       if (subIndex === words[index].length + 1 && forward) {
-//         setForward(false);
-//       }
-
-//       if (subIndex === 0 && !forward) {
-//         setForward(true);
-//         setIndex((prev) => (prev + 1) % words.length);
-//       }
-//     }, 120);
-
-//     return () => clearTimeout(timeout);
-//   }, [subIndex, index, forward, words]);
-
-//   return (
-//     <section className="max-w-7xl mx-auto px-6 lg:px-10 py-16 lg:py-24 grid lg:grid-cols-2 gap-16 items-center">
-
-//       {/* --- Colonne texte --- */}
-//       <div className="space-y-6">
-
-//         {/* Phrase "Hello, I'm" multilingue */}
-//         <p className="uppercase tracking-[0.25em] text-xs text-brand-accent/70">
-//           {t("hello")}
-//         </p>
-
-//         {/* Titre avec machine à écrire */}
-//         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-brand-text dark:text-darkbrand-text leading-tight">
-//           {words[index].substring(0, subIndex)}
-//           <span className="border-r-2 border-brand-accent ml-1 animate-pulse" />
-//         </h1>
-
-//         {/* Sous-titre */}
-//         <p className="text-[17px] text-brand-text/80 dark:text-darkbrand-text/80 max-w-xl leading-relaxed">
-//           {t("subtitle")}
-//         </p>
-
-//         {/* Boutons */}
-//         <div className="flex flex-wrap gap-4 pt-4">
-
-//           {/* View my work */}
-//           <a
-//             href="#projects"
-//             className="px-7 py-3 rounded-full text-white text-sm font-medium
-//                        bg-gradient-to-r from-[#D9A86C] to-[#C89155]
-//                        shadow-soft hover:opacity-90 transition"
-//           >
-//             {t("viewWork")}
-//           </a>
-
-//           {/* Download CV */}
-//           <a
-//             href="/cv.pdf"
-//             download
-//             className="px-7 py-3 rounded-full text-white text-sm font-medium
-//                        bg-gradient-to-r from-[#D9A86C] to-[#C89155]
-//                        shadow-soft hover:opacity-90 transition"
-//           >
-//             {t("downloadCV")}
-//           </a>
-//         </div>
-
-//         {/* Icônes sociales (inchangées) */}
-//         <div className="flex items-center gap-4 pt-6 ml-20">
-//           {/* ICONES… (je ne les répète pas pour alléger) */}
-//           ...
-//         </div>
-
-//       </div>
-
-//       {/* --- Colonne photo --- */}
-//       <div className="flex justify-center lg:justify-end">
-//         <div
-//           className="relative rounded-[2.2rem] p-3 bg-brand-section/80 dark:bg-darkbrand-section/80
-//                      shadow-soft transform transition-transform duration-500
-//                      hover:-translate-y-2 hover:scale-[1.02] hover:shadow-2xl"
-//         >
-//           <div className="absolute inset-0 blur-3xl bg-gradient-to-br from-[#D9A86C]/40 to-[#C89155]/10 opacity-60 -z-10" />
-//           <Image
-//             src="/me4.jpg"
-//             alt="Profile"
-//             width={400}
-//             height={600}
-//             className="rounded-[1.8rem] object-cover aspect-square"
-//             priority
-//           />
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-
-
-
 
 
 
@@ -135,24 +17,24 @@ export default function Hero() {
   const [forward, setForward] = useState(true);
 
   // ---- Machine à écrire (NE PAS TOUCHER) ----
-  useEffect(() => {
-    if (index === words.length) return;
+  // useEffect(() => {
+  //   if (index === words.length) return;
 
-    const timeout = setTimeout(() => {
-      setSubIndex((prev) => (forward ? prev + 1 : prev - 1));
+  //   const timeout = setTimeout(() => {
+  //     setSubIndex((prev) => (forward ? prev + 1 : prev - 1));
 
-      if (subIndex === words[index].length + 1 && forward) {
-        setForward(false);
-      }
+  //     if (subIndex === words[index].length + 1 && forward) {
+  //       setForward(false);
+  //     }
 
-      if (subIndex === 0 && !forward) {
-        setForward(true);
-        setIndex((prev) => (prev + 1) % words.length);
-      }
-    }, 120);
+  //     if (subIndex === 0 && !forward) {
+  //       setForward(true);
+  //       setIndex((prev) => (prev + 1) % words.length);
+  //     }
+  //   }, 120);
 
-    return () => clearTimeout(timeout);
-  }, [subIndex, index, forward, words]);
+  //   return () => clearTimeout(timeout);
+  // }, [subIndex, index, forward, words]);
 
   return (
     <section className="max-w-7xl mx-auto px-6 lg:px-10 py-16 lg:py-24 grid lg:grid-cols-2 gap-16 items-center">
