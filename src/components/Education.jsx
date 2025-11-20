@@ -84,15 +84,21 @@ export default function Education() {
             "
           >
             {/* HEADER */}
-            <div className="flex justify-between items-start mb-2">
-              <h3 className="text-xl font-semibold text-brand-text dark:text-darkbrand-text">
-                {t.school1}
-              </h3>
+            {/* HEADER */}
+<div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+  <h3 className="text-xl font-semibold text-brand-text dark:text-darkbrand-text">
+    {t.school1}
+  </h3>
 
-              <p className="text-sm text-brand-text/70 dark:text-darkbrand-text/70 whitespace-nowrap">
-                {t.date1}
-              </p>
-            </div>
+  <p className="
+    text-sm text-brand-text/70 dark:text-darkbrand-text/70 
+    mt-1 md:mt-0
+    md:whitespace-nowrap
+  ">
+    {t.date1}
+  </p>
+</div>
+
 
             <p className="italic text-brand-text/75 dark:text-darkbrand-text/75">
               {t.degree1}
@@ -125,15 +131,19 @@ export default function Education() {
             "
           >
             {/* HEADER */}
-            <div className="flex justify-between items-start mb-2">
-              <h3 className="text-xl font-semibold text-brand-text dark:text-darkbrand-text">
-                {t.school2}
-              </h3>
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
+  <h3 className="text-xl font-semibold text-brand-text dark:text-darkbrand-text">
+    {t.school2}
+  </h3>
 
-              <p className="text-sm text-brand-text/70 dark:text-darkbrand-text/70 whitespace-nowrap">
-                {t.date2}
-              </p>
-            </div>
+  <p className="
+    text-sm text-brand-text/70 dark:text-darkbrand-text/70 
+    mt-1 md:mt-0
+    md:whitespace-nowrap
+  ">
+    {t.date2}
+  </p>
+</div>
 
             <p className="italic text-brand-text/75 dark:text-darkbrand-text/75">
               {t.degree2}
