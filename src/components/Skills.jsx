@@ -115,7 +115,9 @@ export default function Skills() {
 
               {/* train horizontal */}
               <div className="relative overflow-hidden">
-                <div className="skill-track flex gap-6">
+                {/* <div className="skill-track flex gap-6"> */}
+                <div className="skill-track flex gap-6 shrink-0">
+
                   {stripItems.map((item, i) => (
                     // <div
                     //   key={category.title + item.name + i}

@@ -80,13 +80,35 @@
   }
 }
 
+
+/* 1 */
 /* le train qui défile */
-.skill-track {
+/* .skill-track {
   animation: skillsMarquee 8s linear infinite;
 }
 
 /* quand on survole une ligne de skills, on met en pause */
+/* .skill-row:hover .skill-track {
+  animation-play-state: paused;
+} */ 
+
+
+/* TRAIN INFINI RÉEL */
+.skill-track {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;     /* 🔥 largeur réelle */
+  animation: skillsMarquee 10s linear infinite;
+}
+
+@keyframes skillsMarquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* 50% = fin du premier set */
+}
+
+/* pause au survol */
 .skill-row:hover .skill-track {
   animation-play-state: paused;
 }
+
 
