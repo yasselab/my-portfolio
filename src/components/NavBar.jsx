@@ -11,10 +11,10 @@ export default function NavBar() {
 
   const labels =
     lang === "fr"
-      ? ["À propos", "Expérience", "Compétences", "Projets", "Contact"]
-      : ["About", "Experience", "Skills", "Projects", "Contact"];
+      ? ["À propos", "Expérience", "Compétences", "Projets", "Certifications", "Education", "Contact"]
+      : ["About", "Experience", "Skills", "Projects", "Certifications", "Education", "Contact"];
 
-  const ids = ["about", "experience", "skills", "projects", "contact"];
+  const ids = ["about", "experience", "skills", "projects", "certifications", "education", "contact"];
 
   return (
     <motion.header
