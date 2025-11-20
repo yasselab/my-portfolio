@@ -8,6 +8,8 @@ import Contact from "@/components/Contact";
 import Certifications from "@/components/Certifications";
 import ScrollToTop from "@/components/ScrollToTop";
 
+import Education from "@/components/Education";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-brand-bg dark:bg-darkbrand-bg text-brand-text dark:text-darkbrand-text transition-colors duration-300">
@@ -18,6 +20,7 @@ export default function Home() {
       <Skills />
       <Projects />
       <Certifications />
+      <Education />
       <Contact />
 
        {/* Bouton retour en haut */}
