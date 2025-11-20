@@ -82,7 +82,7 @@
 
 /* le train qui défile */
 .skill-track {
-  animation: skillsMarquee 22s linear infinite;
+  animation: skillsMarquee 8s linear infinite;
 }
 
 /* quand on survole une ligne de skills, on met en pause */

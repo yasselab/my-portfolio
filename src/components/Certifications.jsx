@@ -80,7 +80,7 @@ export default function Certifications() {
             className="
               rounded-3xl overflow-hidden shadow-lg 
               bg-white/80 dark:bg-[#1a1415]/80 
-              border border-[#D9A86C]/30 dark:border-darkbrand-accent/30
+              border border-[#F1D7B6]/30 dark:border-darkbrand-accent/30
               backdrop-blur-xl transition-all
             "
           >
@@ -112,14 +112,14 @@ export default function Certifications() {
                 ))}
               </ul>
             </div> */}
-            <div className="bg-[#86663d] dark:bg-[#3b2f2f] px-6 py-5 rounded-b-3xl">
+            <div className="bg-[#a38b6e] dark:bg-[#3b2f2f] px-6 py-5 rounded-b-3xl">
   {/* Issuer */}
   <h3 className="text-center text-brand-text dark:text-darkbrand-text font-semibold mb-3 tracking-wide">
     {cat.issuer}
   </h3>
 
   {/* Ligne */}
-  <div className="h-[1px] w-full bg-[#D9A86C]/40 mb-4"></div>
+  <div className="h-[1px] w-full bg-[#2e271e]/40 mb-4"></div> 
 
   {/* Liste */}
   <ul className="space-y-2 text-[14px] text-brand-text dark:text-darkbrand-text/90">
