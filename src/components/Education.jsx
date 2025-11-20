@@ -28,7 +28,7 @@ export default function Education() {
 
       school1: "École des Sciences de l’Information (ESI)",
       degree1:
-        "Master en Ingénierie – Ingénierie des Systèmes d’Information et Transformation Digitale",
+        "Diplôme en Ingénierie – Ingénierie des Systèmes d’Information et Transformation Digitale",
       date1: "Septembre 2023 – Présent",
       location1: "Rabat, Maroc",
 
